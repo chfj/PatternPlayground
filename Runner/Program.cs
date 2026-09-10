@@ -11,9 +11,9 @@ internal static class Program
     {
         var entries = new List<MenuEntry>
         {
-            new(1, "Singleton", "Guarantee a single, globally reachable instance of something that must not be duplicated.", Patterns.Singleton.Solution.Reference.Demo),
-            new(2, "Factory Method", "Let subclasses/callers decide which concrete type to instantiate behind a common interface.", Patterns.FactoryMethod.Solution.Reference.Demo),
-            new(3, "Builder", "Construct a complex object step by step, keeping optional parts out of a giant constructor.", Patterns.Builder.Solution.Reference.Demo),
+            new(1, "Singleton", "Guarantee a single, globally reachable instance of something that must not be duplicated.", Patterns.Singleton.Solution.SaveManager.Demo),
+            new(2, "Factory Method", "Let subclasses/callers decide which concrete type to instantiate behind a common interface.", Patterns.FactoryMethod.Solution.NotificationService.Demo),
+            new(3, "Builder", "Construct a complex object step by step, keeping optional parts out of a giant constructor.", Patterns.Builder.Solution.InvoiceBuilder.Demo),
             new(4, "Adapter", "Make an existing interface work with client code that expects a different one.", Patterns.Adapter.Solution.Reference.Demo),
             new(5, "Decorator", "Attach behavior to an object dynamically without touching its class or its siblings.", Patterns.Decorator.Solution.Reference.Demo),
             new(6, "Facade", "Offer one simple entry point over a set of complex, interdependent subsystems.", Patterns.Facade.Solution.Reference.Demo),
