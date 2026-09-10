@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Runner</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Pulls in every pattern's Task.cs / Solution.cs so the whole
+         tutorial compiles as a single console assembly. -->
+    <Compile Include="..\Patterns\**\*.cs" />
+  </ItemGroup>
+
+</Project>
