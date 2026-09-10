@@ -24,8 +24,8 @@ internal static class Program
             new(11, "Command", "Turn a request into an object so it can be queued, logged, or undone.", Patterns.Command.Solution.RemoteControl.Demo),
             new(12, "Iterator", "Traverse a collection's elements without exposing how it's stored internally.", Patterns.Iterator.Solution.Playlist.Demo),
             new(13, "State", "Let an object change its behavior when its internal state changes, without giant if/switch blocks.", Patterns.State.Solution.Order.Demo),
-            new(14, "Template Method", "Fix the skeleton of an algorithm in a base class, letting subclasses fill in the steps.", Patterns.TemplateMethod.Solution.Reference.Demo),
-            new(15, "Chain of Responsibility", "Pass a request along a chain of handlers until one of them handles it.", Patterns.ChainOfResponsibility.Solution.Reference.Demo),
+            new(14, "Template Method", "Fix the skeleton of an algorithm in a base class, letting subclasses fill in the steps.", Patterns.TemplateMethod.Solution.JsonDataImporter.Demo),
+            new(15, "Chain of Responsibility", "Pass a request along a chain of handlers until one of them handles it.", Patterns.ChainOfResponsibility.Solution.Level3Support.Demo),
         };
 
         while (true)
