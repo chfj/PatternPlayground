@@ -22,8 +22,8 @@ internal static class Program
             new(9, "Observer", "Notify a dynamic set of interested parties whenever an object's state changes.", Patterns.Observer.Solution.AnalyticsObserver.Demo),
             new(10, "Strategy", "Swap an algorithm's implementation at runtime without changing the code that uses it.", Patterns.Strategy.Solution.ShippingCalculator.Demo),
             new(11, "Command", "Turn a request into an object so it can be queued, logged, or undone.", Patterns.Command.Solution.RemoteControl.Demo),
-            new(12, "Iterator", "Traverse a collection's elements without exposing how it's stored internally.", Patterns.Iterator.Solution.Reference.Demo),
-            new(13, "State", "Let an object change its behavior when its internal state changes, without giant if/switch blocks.", Patterns.State.Solution.Reference.Demo),
+            new(12, "Iterator", "Traverse a collection's elements without exposing how it's stored internally.", Patterns.Iterator.Solution.Playlist.Demo),
+            new(13, "State", "Let an object change its behavior when its internal state changes, without giant if/switch blocks.", Patterns.State.Solution.Order.Demo),
             new(14, "Template Method", "Fix the skeleton of an algorithm in a base class, letting subclasses fill in the steps.", Patterns.TemplateMethod.Solution.Reference.Demo),
             new(15, "Chain of Responsibility", "Pass a request along a chain of handlers until one of them handles it.", Patterns.ChainOfResponsibility.Solution.Reference.Demo),
         };
