@@ -17,6 +17,20 @@ to exit. To work through the exercises yourself, open a pattern's
 `Task.cs`, read its `README.md`, fill in the `// TODO`s, and compare
 your result against `Solution.cs` when you're done.
 
+## How to check your work
+
+```
+dotnet test
+```
+
+Runs the `Tests` project against whatever you've written in every
+pattern's `Task.cs`. Each pattern has its own test file under
+`Tests/<NN-Pattern>/` exercising the exact behavior its `// TODO`s
+describe — red until your implementation is correct, green once it is.
+Run `dotnet test --filter FullyQualifiedName~SingletonTests` (swap in
+any test class name) to run just one pattern's tests while you're
+working on it.
+
 ## Patterns
 
 | # | Pattern | What it's for |
@@ -50,10 +64,17 @@ DesignPatterns.sln
 /Runner
   Program.cs        <- interactive console menu
   Runner.csproj      <- single console project; compiles all of /Patterns too
+/Tests
+  /01-Singleton
+    SingletonTests.cs  <- xUnit tests against Patterns.Singleton.Task
+  ...
+  Tests.csproj      <- xUnit project; compiles all of /Patterns too
 ```
 
-`Runner.csproj` is the only project in the solution — it wildcard-includes
-every `.cs` file under `/Patterns`, so `Task.cs` and `Solution.cs` for
-every pattern compile into one assembly. Each pattern uses its own
+`Runner.csproj` and `Tests.csproj` both wildcard-include every `.cs`
+file under `/Patterns`, so `Task.cs` and `Solution.cs` for every pattern
+compile into each of them independently. Each pattern uses its own
 namespace pair (e.g. `Patterns.Singleton.Task` / `Patterns.Singleton.Solution`)
-so the exercise scaffolding and the reference answer never collide.
+so the exercise scaffolding and the reference answer never collide, and
+`Tests` only ever references the `.Task` namespace — it's checking your
+work, not the reference solution.
